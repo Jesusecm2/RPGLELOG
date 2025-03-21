@@ -1,0 +1,52 @@
+     A*%%TS  SD  20231004  201030  JESUSECM2   REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R LOGINWDW
+     A*%%TS  SD  20231004  195110  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      WINDOW(LOGINWDWB)
+     A                                      RMVWDW
+     A                                      OVERLAY
+     A            OUUSER        19A  O  4  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            OUPASS        19A  O  8  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            INPUSER       19A  B  6  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A            INPASS        19A  B 10  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A            TITLETXT      15A  O  2  6DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A            OPCBTN         2Y 0B 12  4PSHBTNFLD(*RSTCSR)
+     A                                      PSHBTNCHC(1 'INICIAR' CF01)
+     A                                      PSHBTNCHC(2 'OLVIDO CONTRASENA')
+     A          R LOGINWDWB
+     A*%%TS  SD  20231004  181113  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      WINDOW(8 25 14 25)
+     A                                      WDWBORDER((*COLOR BLU) (*DSPATR RI)-
+     A                                       (*CHAR '        '))
+     A                                      OVERLAY
+     A                                      WDWTITLE((*TEXT &TITLEWDW))
+     A            TITLEWDW      15A  P
+     A          R HEADER
+     A*%%TS  SD  20231004  201030  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      OVERLAY
+     A                                  3  2USER
+     A                                      DSPATR(HI)
+     A                                      COLOR(YLW)
+     A                                  5  3'                                  -
+     A                                                                         -
+     A                                             '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(BLU)
+     A                                  3 68TIME
+     A                                      DSPATR(HI)
+     A                                      COLOR(YLW)
+     A                                  4 80' '
+     A                                  4 68DATE
+     A                                      EDTCDE(Y)
+     A                                      COLOR(YLW)
+     A                                  3 37'SYSENV'
+     A                                      DSPATR(HI)
+     A                                      COLOR(BLU)

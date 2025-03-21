@@ -1,0 +1,21 @@
+      *****************************************************************
+      ** ARCHIVO DE EMPLEADOS
+      ** FECHA DE CREACIÓN 2023
+      ** AUTOR: JESUS EDUARDO
+      ** PMO: 170000
+      *****************************************************************
+                                            UNIQUE
+                R EMO99R                    TEXT('PRUEBA EMP99')
+                  IDEMP          5S 0       TEXT('IDENTIFICACION DE EMPLEADO')
+                                            COLHDG('IDENTIFICACION' 'EMPLEADO')
+                  NOMBRE        30A         TEXT('NOMBRE DE EMPLEADO')
+                                            COLHDG('NOMBRE' 'EMPLEADO')
+                  APELLIDO      30A         TEXT('APELLIDODE EMPLEADO')
+                                            COLHDG('APELLIDO' 'EMPLEADO')
+                  FECHAINI        L         TEXT('FECHA DE INGRESO D EMPLEADO')
+                                            COLHDG('FECHA' 'INGRESO' 'EMPLEADO')
+                  HORAINI         T         TEXT('HORA INGRESO DE EMPLEADO')
+                                            COLHDG('HORA' 'INGRESO' 'EMPLEADO')
+                  AUDITORIA       Z         TEXT('AUDITORIA DE EMPLEADO')
+                                            COLHDG('AUDITORIA' 'EMPLEADO')
+                K IDEMP

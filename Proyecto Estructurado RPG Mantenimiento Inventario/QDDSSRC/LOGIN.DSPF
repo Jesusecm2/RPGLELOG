@@ -1,0 +1,122 @@
+     A*%%TS  SD  20231017  200429  JESUSECM2   REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R LOGINWDW
+     A*%%TS  SD  20231005  205407  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      WINDOW(LOGINWDWB)
+     A                                      CF03(03)
+     A                                      OVERLAY
+     A                                      RMVWDW
+     A            OUUSER        19A  O  4  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            OUPASS        19A  O  8  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            INPUSER       19A  B  6  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A            INPASS        19A  B 10  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A            TITLETXT      15A  O  2  6DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A            OPCBTN         2Y 0B 12  4PSHBTNFLD(*RSTCSR)
+     A                                      PSHBTNCHC(1 'INICIAR' CF01)
+     A                                      PSHBTNCHC(2 'OLVIDO CONTRASENA')
+     A                                      PSHBTNCHC(3 'SALIR')
+     A            MSGTEXT       19A  O 14  4DSPATR(HI)
+     A                                      COLOR(RED)
+     A          R LOGINWDWB
+     A*%%TS  SD  20231013  144044  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      OVERLAY
+     A                                      WINDOW(7 25 15 25)
+     A                                      WDWBORDER((*COLOR BLU) (*DSPATR RI)-
+     A                                       (*CHAR '        '))
+     A                                      WDWTITLE((*TEXT &TITLEWDW))
+     A            TITLEWDW      15A  P
+     A          R HEADER
+     A*%%TS  SD  20231004  201030  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      OVERLAY
+     A                                  3  2USER
+     A                                      DSPATR(HI)
+     A                                      COLOR(YLW)
+     A                                  5  3'                                  -
+     A                                                                         -
+     A                                             '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(BLU)
+     A                                  3 68TIME
+     A                                      DSPATR(HI)
+     A                                      COLOR(YLW)
+     A                                  4 80' '
+     A                                  4 68DATE
+     A                                      EDTCDE(Y)
+     A                                      COLOR(YLW)
+     A                                  3 37'SYSENV'
+     A                                      DSPATR(HI)
+     A                                      COLOR(BLU)
+     A          R RECUPWDW
+     A*%%TS  SD  20231016  122800  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      WINDOW(LOGINWDWB)
+     A                                      RMVWDW
+     A                                      USRRSTDSP
+     A                                      CF03(03)
+     A            TITLETXT      15A  O  2  6DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A            MSGTEXT       19A  O 14  4DSPATR(HI)
+     A                                      COLOR(RED)
+     A            OUUSER        19A  O  4  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            INPUSER       19A  B  5  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A            OUEMAIL       19A  O  7  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            INEMAIL       50A  B  8  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A                                      CNTFLD(019)
+     A            OPCBTN         2Y 0B 12  4PSHBTNFLD(*RSTCSR)
+     A                                      PSHBTNCHC(1 'RECUPERAR' CF01)
+     A                                      PSHBTNCHC(2 'VOLVER')
+     A          R PREGWDW
+     A*%%TS  SD  20231017  143928  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      WINDOW(LOGINWDWB)
+     A                                      RMVWDW
+     A                                      USRRSTDSP
+     A                                      CF03(03)
+     A            TITLETXT      15A  O  2  6DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A            MSGTEXT       19A  O 14  4DSPATR(HI)
+     A                                      COLOR(RED)
+     A            OUPREG        19A  O  4  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            INPPREG       19A  B  5  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A            OUPREG1       19A  O  7  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            INPREG1       20A  B  8  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A            OPCBTN         2Y 0B 12  4PSHBTNFLD(*RSTCSR)
+     A                                      PSHBTNCHC(1 'RECUPERAR' CF01)
+     A                                      PSHBTNCHC(2 'SALIR' CF01)
+     A          R CHANGWDW
+     A*%%TS  SD  20231017  200429  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      WINDOW(LOGINWDWB)
+     A                                      RMVWDW
+     A                                      USRRSTDSP
+     A            TITLETXT      15A  O  2  6DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A            MSGTEXT       19A  O 14  4DSPATR(HI)
+     A                                      COLOR(RED)
+     A            OUPASS        19A  O  4  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            INPASS        19A  B  5  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A            OUPASS1       19A  O  6  4DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            INPASS1       19A  B  7  4DSPATR(HI)
+     A                                      COLOR(BLU)
+     A            OPCBTN         2Y 0B 12  4PSHBTNFLD(*RSTCSR)
+     A                                      PSHBTNCHC(1 'CAMBIAR' CF01)
+     A                                      PSHBTNCHC(2 'SALIR' CF01)

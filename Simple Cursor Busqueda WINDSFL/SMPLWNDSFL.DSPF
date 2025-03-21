@@ -1,0 +1,38 @@
+     A*%%TS  SD  20230927  132447  JESUSECM2   REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R SFL                       SFL
+     A*%%TS  SD  20230926  201231  JESUSECM2   REL-V7R5M0  5770-WDS
+     A            CTLFLD         1Y 0H      SFLCHCCTL
+     A            FLD001        10A  O  5  5
+     A          R WDWSUBFILE                SFLCTL(SFL)
+     A*%%TS  SD  20230927  132447  JESUSECM2   REL-V7R5M0  5770-WDS
+     A                                      CF03(03 'SALIR')
+     A                                      RTNCSRLOC(&CSRRCD &CSRFLD &CSRPOS)
+     A  01                                  SFLDSP
+     A  02                                  SFLDSPCTL
+     A  05                                  SFLCLR
+     A  06                                  SFLEND(*SCRBAR *SCRBAR)
+     A                                      SFLSIZ(&SSUB)
+     A                                      SFLPAG(0010)
+     A                                      WINDOW(5 20 15 20)
+     A                                      WDWBORDER((*COLOR BLU) (*DSPATR RI)-
+     A                                       (*CHAR '        '))
+     A                                      RMVWDW
+     A                                      USRRSTDSP
+     A                                      SFLSNGCHC(*SLTIND)
+     A                                      WDWTITLE((*TEXT ' PERSONAS  '))
+     A                                  2  2'Buscar:'
+     A                                      DSPATR(HI)
+     A                                      COLOR(WHT)
+     A            SEARCH        10A  B  3  2DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A            SSUB           5S 0P
+     A            CSRRCD        10A  H
+     A            CSRFLD        10A  H
+     A            CSRPOS         4S 0H
+     A            CODE01         2A  I  1  3DFT('01')
+     A                                      DSPATR(PR)
+     A                                      DSPATR(ND)
+     A                                      DSPATR(MDT)
